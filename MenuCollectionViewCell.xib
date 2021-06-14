@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCollectionViewCell" id="gTV-IL-0wX" customClass="MenuCollectionViewCell" customModule="Zomato_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="169" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drD-k3-qc9">
+                        <rect key="frame" x="0.0" y="0.0" width="169" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ji-Jw-5cd">
+                                <rect key="frame" x="0.0" y="0.0" width="169" height="190"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.70196078429999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ib9-QF-zIf" customClass="MSMenuLable" customModule="Zomato_iOS" customModuleProvider="target">
+                                <rect key="frame" x="10" y="80" width="149" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oKp-Bj-hKg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ib9-QF-zIf" firstAttribute="centerY" secondItem="drD-k3-qc9" secondAttribute="centerY" id="8qb-PI-Cnd"/>
+                            <constraint firstAttribute="bottom" secondItem="6ji-Jw-5cd" secondAttribute="bottom" id="Apq-nU-a8K"/>
+                            <constraint firstItem="6ji-Jw-5cd" firstAttribute="leading" secondItem="drD-k3-qc9" secondAttribute="leading" id="CyX-Sk-GMf"/>
+                            <constraint firstAttribute="trailing" secondItem="ib9-QF-zIf" secondAttribute="trailing" constant="10" id="QtC-5a-hHG"/>
+                            <constraint firstItem="ib9-QF-zIf" firstAttribute="leading" secondItem="drD-k3-qc9" secondAttribute="leading" constant="10" id="i6u-Pc-Xqf"/>
+                            <constraint firstItem="6ji-Jw-5cd" firstAttribute="top" secondItem="drD-k3-qc9" secondAttribute="top" id="l87-Eo-ELe"/>
+                            <constraint firstAttribute="trailing" secondItem="6ji-Jw-5cd" secondAttribute="trailing" id="oQQ-mf-fiS"/>
+                            <constraint firstItem="ib9-QF-zIf" firstAttribute="centerX" secondItem="drD-k3-qc9" secondAttribute="centerX" id="rVC-e0-foC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="drD-k3-qc9" secondAttribute="bottom" id="EPy-XZ-FUZ"/>
+                <constraint firstItem="drD-k3-qc9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HMT-Qe-y7I"/>
+                <constraint firstAttribute="trailing" secondItem="drD-k3-qc9" secondAttribute="trailing" id="hkg-TU-K55"/>
+                <constraint firstItem="drD-k3-qc9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jiN-Wk-WIo"/>
+            </constraints>
+            <size key="customSize" width="169" height="190"/>
+            <connections>
+                <outlet property="imgMenu" destination="6ji-Jw-5cd" id="8QM-tD-o2U"/>
+                <outlet property="lblVal" destination="ib9-QF-zIf" id="wZM-NX-y7P"/>
+            </connections>
+            <point key="canvasLocation" x="226.81159420289856" y="174.77678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
